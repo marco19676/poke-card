@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   ">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="img">
+        <img id="logo" src="https://pluspng.com/img-png/pokemon-logo-png-pokemon-logo-png-2000.png">
+    </div>
+
+
+
+    <form action="#">
+        <label for="pokeName"></label>
+        <input type="text" id="pokeName" maxlength="14" placeholder="pokemon:" required pattern="[a-z]+$"
+            oninput="handleInput()">
+
+        <label for="btn"></label>
+        <div id="botao"><button id="btn" type="button">search</button></div>
+    </form>
+
+    <div id="cards">
+
+        <figure class="card card--normal">
+            <div class="card__image-container" id="card2">
+
+            </div>
+
+            <figcaption class="card__caption">
+                <h1 class="card__name" id="p2"></h1>
+
+                <h3 class="card__type" id="p3">
+
+                </h3>
+
+                <table class="card__stats">
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <td id="p4"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td id="p5"></td>
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+
+                <div class="card__abilities">
+                    <h4 class="card__ability" id="p1">
+                        <span class="card__label"></span>
+
+                    </h4>
+
+                </div>
+            </figcaption>
+        </figure>
+
+
+
+
+
+
+        <script src="main.js"></script>
+</body>
+
+</html>
